@@ -59,19 +59,113 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #dfe6f1;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+  box-shadow: 0 8px 18px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.1rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.schedule-line {
+  color: #455a64;
+}
+
+.activity-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.badge-availability {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-capacity {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.participants-section {
+  background: #f8fbff;
+  border: 1px solid #dbe6f5;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.participants-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participant-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #edf3ff;
+  border: 1px solid #c9d8ff;
+  border-radius: 999px;
+  color: #1a237e;
+  padding: 6px 8px 6px 10px;
+  font-size: 0.92rem;
+}
+
+.participant-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 50%;
+  background: #dbe4ff;
+  color: #1a237e;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.participant-remove:hover {
+  background: #c6d4ff;
+  transform: scale(1.04);
+}
+
+.participants-empty {
+  color: #546e7a;
+  font-style: italic;
 }
 
 .form-group {
